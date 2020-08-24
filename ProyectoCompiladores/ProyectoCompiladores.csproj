@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analisis Lexico\Lexer.cs" />
+    <Compile Include="Analisis Lexico\Num.cs" />
+    <Compile Include="Analisis Lexico\Palabra.cs" />
     <Compile Include="Analisis Lexico\Real.cs" />
+    <Compile Include="Analisis Lexico\Tipo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
