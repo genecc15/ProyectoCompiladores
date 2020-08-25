@@ -17,13 +17,15 @@ namespace ProyectoCompiladores
 {
     public partial class Form1 : Form
     {
+        loading load;
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void btnAnalisisLexico_Click(object sender, EventArgs e)
+        private async void btnAnalisisLexico_Click(object sender, EventArgs e)
         {
+
             //agregué esto
             #region Variables y lectura
             string path = "";
@@ -49,6 +51,7 @@ namespace ProyectoCompiladores
             #endregion
             Lexer lexer = new Lexer(archivo);
             richTextBox1.Text = string.Empty;
+           
             //y esto
             #region EscrituraArchivo            
             if (fbd.ShowDialog() == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
@@ -64,8 +67,29 @@ namespace ProyectoCompiladores
             }
             sw.Close();
             richTextBox1.Text = textB.ToString();
+            Show();
+            Task oTask = new Task(Loadd);
+            oTask.Start();
+            await oTask;
+            Hide();
             MessageBox.Show("Archivo de salida " + nombreArchivo + ".out, " + "creado con exito");
             #endregion
+        }
+        public void Loadd()
+        {
+            Thread.Sleep(2000);
+        }
+        public void Show()
+        {
+            load = new loading();
+            load.Show();
+        }
+        public void Hide()
+        {
+            if (load != null)
+            {
+                load.Close();
+            }
         }
     }
 }
