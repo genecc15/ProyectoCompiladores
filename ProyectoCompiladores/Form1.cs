@@ -11,6 +11,7 @@ using ProyectoCompiladores.Tokens;
 using ProyectoCompiladores.Analisis_Lexico;
 using System.Threading;
 using System.IO;
+using ProyectoCompis.Analisis_Lexico;
 
 namespace ProyectoCompiladores
 {
@@ -46,7 +47,8 @@ namespace ProyectoCompiladores
                 archivo += sr.ReadLine();
             }
             #endregion
-
+            Lexer lexer = new Lexer(archivo);
+            richTextBox1.Text = string.Empty;
             //y esto
             #region EscrituraArchivo            
             if (fbd.ShowDialog() == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
