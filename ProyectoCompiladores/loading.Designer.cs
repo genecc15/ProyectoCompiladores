@@ -46,7 +46,7 @@
             // 
             this.MiLoading.Location = new System.Drawing.Point(0, 0);
             this.MiLoading.Name = "MiLoading";
-            this.MiLoading.Size = new System.Drawing.Size(628, 323);
+            this.MiLoading.Size = new System.Drawing.Size(635, 328);
             this.MiLoading.TabIndex = 1;
             this.MiLoading.TabStop = false;
             // 
@@ -60,6 +60,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "loading";
             this.Opacity = 0.9D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "loading";
             this.Load += new System.EventHandler(this.loading_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
