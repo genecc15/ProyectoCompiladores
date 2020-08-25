@@ -225,7 +225,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:MiniJ"
         "ProductCode" = "8:{31DF0844-4DC1-4165-9176-F91DFDADCEE9}"
-        "PackageCode" = "8:{9E5C313C-2FFF-46BC-A069-E31CF87D0368}"
+        "PackageCode" = "8:{E9AD6919-659D-412C-AA2C-00D3D1B3E891}"
         "UpgradeCode" = "8:{95CD07E4-A713-4947-B468-0377C18A37C8}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
