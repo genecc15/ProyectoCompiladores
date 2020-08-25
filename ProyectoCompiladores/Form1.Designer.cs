@@ -54,7 +54,7 @@
             // btnAnalisisLexico
             // 
             this.btnAnalisisLexico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAnalisisLexico.BackgroundImage")));
-            this.btnAnalisisLexico.Location = new System.Drawing.Point(426, 348);
+            this.btnAnalisisLexico.Location = new System.Drawing.Point(360, 342);
             this.btnAnalisisLexico.Name = "btnAnalisisLexico";
             this.btnAnalisisLexico.Size = new System.Drawing.Size(122, 120);
             this.btnAnalisisLexico.TabIndex = 2;
@@ -63,7 +63,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(602, 112);
+            this.richTextBox1.Location = new System.Drawing.Point(555, 112);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(350, 350);
             this.richTextBox1.TabIndex = 3;
