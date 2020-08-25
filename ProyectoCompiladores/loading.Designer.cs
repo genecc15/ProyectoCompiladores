@@ -44,9 +44,10 @@
             // 
             // MiLoading
             // 
-            this.MiLoading.Location = new System.Drawing.Point(0, 0);
+            this.MiLoading.Image = global::ProyectoCompiladores.Properties.Resources.load;
+            this.MiLoading.Location = new System.Drawing.Point(52, 38);
             this.MiLoading.Name = "MiLoading";
-            this.MiLoading.Size = new System.Drawing.Size(635, 328);
+            this.MiLoading.Size = new System.Drawing.Size(529, 285);
             this.MiLoading.TabIndex = 1;
             this.MiLoading.TabStop = false;
             // 
