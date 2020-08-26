@@ -21,7 +21,7 @@ namespace ProyectoCompiladores.Tokens
 
         public override string ToString()
         {
-            return string.Format("{0} {1}", Lexeme, TokenType.ToString());
+            return string.Format("{0}     {1}", Lexeme, TokenType.ToString());
 
         }
 

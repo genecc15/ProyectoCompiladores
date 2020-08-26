@@ -68,17 +68,17 @@ namespace ProyectoCompiladores.Tokens
         {
             if (IsType)
             {
-                return "Tipo de dato " + Token.Lexeme + " linea " + Line + " cols" + string.Format(" [{0,2}:{1,2}] ", Index, (Token.Lexeme.Length + Index));
+                return "Tipo de dato " + Token.Lexeme + "          Linea " + Line + "  Cols" + string.Format(" [{0,2}:{1,2}] ", Index, (Token.Lexeme.Length + Index));
             }
             else if (IsLoop)
             {
-                return "Ciclo " + Token.Lexeme + " linea " + Line + " cols" + string.Format(" [{0,2}:{1,2}] ", Index, (Token.Lexeme.Length + Index));
+                return "Ciclo " + Token.Lexeme + "          Linea " + Line + "  Cols" + string.Format(" [{0,2}:{1,2}] ", Index, (Token.Lexeme.Length + Index));
             }
             else if (IsKeyword)
             {
-                return "Palabra reservada " + Token.Lexeme + " linea " + Line + " cols" + string.Format(" [{0,2}:{1,2}] ", Index, (Token.Lexeme.Length + Index));
+                return "" + Token.Lexeme + "     Reservada" +  "         Linea " + Line + "  Cols" + string.Format(" [{0,2}:{1,2}] ", Index, (Token.Lexeme.Length + Index));
             }
-            return Token.ToString() + " linea " + Line + " cols" + string.Format(" [{0,2}:{1,2}] ", Index, (Token.Lexeme.Length + Index));
+            return "" + Token.ToString() + "          Linea " + Line + "   Cols" + string.Format(" [{0,2}:{1,2}] ", Index, (Token.Lexeme.Length + Index));
         }
     }
 }

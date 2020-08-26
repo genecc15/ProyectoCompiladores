@@ -38,10 +38,11 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Location = new System.Drawing.Point(16, 15);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(40, 30);
+            this.textBox1.Size = new System.Drawing.Size(52, 36);
             this.textBox1.TabIndex = 0;
             this.textBox1.Visible = false;
             // 
@@ -54,31 +55,34 @@
             // btnAnalisisLexico
             // 
             this.btnAnalisisLexico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAnalisisLexico.BackgroundImage")));
-            this.btnAnalisisLexico.Location = new System.Drawing.Point(360, 342);
+            this.btnAnalisisLexico.Location = new System.Drawing.Point(405, 345);
+            this.btnAnalisisLexico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAnalisisLexico.Name = "btnAnalisisLexico";
-            this.btnAnalisisLexico.Size = new System.Drawing.Size(122, 120);
+            this.btnAnalisisLexico.Size = new System.Drawing.Size(163, 150);
             this.btnAnalisisLexico.TabIndex = 2;
             this.btnAnalisisLexico.UseVisualStyleBackColor = true;
             this.btnAnalisisLexico.Click += new System.EventHandler(this.btnAnalisisLexico_Click);
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(555, 112);
+            this.richTextBox1.Location = new System.Drawing.Point(668, 145);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(350, 350);
+            this.richTextBox1.Size = new System.Drawing.Size(580, 580);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoCompiladores.Properties.Resources.mc;
-            this.ClientSize = new System.Drawing.Size(1045, 629);
+            this.ClientSize = new System.Drawing.Size(1393, 786);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnAnalisisLexico);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MiniJ";
