@@ -51,7 +51,12 @@ namespace ProyectoCompiladores
             #endregion
             Lexer lexer = new Lexer(archivo);
             richTextBox1.Text = string.Empty;
-           
+            Show();
+            Task oTask = new Task(Loadd);
+            oTask.Start();
+            await oTask;
+            Hide();
+
             //y esto
             #region EscrituraArchivo            
             if (fbd.ShowDialog() == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
@@ -67,11 +72,6 @@ namespace ProyectoCompiladores
             }
             sw.Close();
             richTextBox1.Text = textB.ToString();
-            Show();
-            Task oTask = new Task(Loadd);
-            oTask.Start();
-            await oTask;
-            Hide();
             MessageBox.Show("Archivo de salida " + nombreArchivo + ".out, " + "creado con exito");
             #endregion
         }
