@@ -17,10 +17,12 @@ namespace ProyectoCompiladores
 {
     public partial class Form1 : Form
     {
+        
         loading load;
         public Form1()
         {
             InitializeComponent();
+            lblCreado.Visible = false;
         }
 
         private async void btnAnalisisLexico_Click(object sender, EventArgs e)
@@ -72,7 +74,9 @@ namespace ProyectoCompiladores
             }
             sw.Close();
             richTextBox1.Text = textB.ToString();
-            MessageBox.Show("Archivo de salida " + nombreArchivo + ".out, " + "creado con exito");
+            lblCreado.Visible = true;
+            lblCreado.ForeColor = Color.Green;
+            lblCreado.Text = "Archivo de salida " + nombreArchivo + ".out, " + "creado con exito";
             #endregion
         }
         public void Loadd()

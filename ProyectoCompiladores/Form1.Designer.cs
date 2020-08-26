@@ -34,6 +34,8 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnAnalisisLexico = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.lblArchivo = new System.Windows.Forms.Label();
+            this.lblCreado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -72,12 +74,31 @@
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
+            // lblArchivo
+            // 
+            this.lblArchivo.AutoSize = true;
+            this.lblArchivo.Location = new System.Drawing.Point(918, 37);
+            this.lblArchivo.Name = "lblArchivo";
+            this.lblArchivo.Size = new System.Drawing.Size(0, 25);
+            this.lblArchivo.TabIndex = 4;
+            // 
+            // lblCreado
+            // 
+            this.lblCreado.AutoSize = true;
+            this.lblCreado.Location = new System.Drawing.Point(663, 67);
+            this.lblCreado.Name = "lblCreado";
+            this.lblCreado.Size = new System.Drawing.Size(66, 25);
+            this.lblCreado.TabIndex = 5;
+            this.lblCreado.Text = ".........";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoCompiladores.Properties.Resources.mc;
             this.ClientSize = new System.Drawing.Size(1393, 786);
+            this.Controls.Add(this.lblCreado);
+            this.Controls.Add(this.lblArchivo);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnAnalisisLexico);
             this.Controls.Add(this.textBox1);
@@ -97,6 +118,8 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button btnAnalisisLexico;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label lblArchivo;
+        private System.Windows.Forms.Label lblCreado;
     }
 }
 
