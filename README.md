@@ -7,3 +7,6 @@ lo envía a la clase token la cual se encarga de verificar su tipo y luego revis
 procede entonces a info a revisar exactamente cual reservada es. También contamos con las clases num, entero, real, palabra que verifican si está bien su escritura y en lexer 
 es donde creamos todo el analizador. De no encontrar algo válido, procede a en tokentype a extraer "Error". Todo aquello que no se haya agregado a los tokens el programa lo 
 considera como un error.
+
+Creditos:
+Génesis Cortez y Kevin Damián
