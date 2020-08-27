@@ -217,7 +217,7 @@ namespace ProyectoCompis.Analisis_Lexico
                         string lexeme = "/*";
                         char ac;
                         do { ac = reader.Read(); lexeme += ac; }
-                        while (ac != InputHelper.EOF && !(ac == '*' && reader.Peek() == '/')); // Ignore until end of commentary
+                        while (ac != InputHelper.EOF && !(ac == '*' && reader.Peek() == '/')); //Ignora todo lo que esta dentro del comment
                         if (reader.Consume()) lexeme = lexeme.Substring(0, lexeme.Length - 1) + "*/";
                         return new Token(lexeme, TokenType.BLOCK_COMMENT);
                     }
