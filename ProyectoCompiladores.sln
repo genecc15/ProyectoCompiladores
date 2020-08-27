@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoCompiladores", "ProyectoCompiladores\ProyectoCompiladores.csproj", "{03D76DE6-3C07-4AA8-A3A0-E35DC5CE15BB}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MiniJ", "MiniJ\MiniJ.vdproj", "{B6B3263D-30EA-4BAC-A339-3A25E7515D41}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MinJ", "MinJ\MinJ.vdproj", "{43DE70FB-DA90-4BE9-ACB4-30B05373B8A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{03D76DE6-3C07-4AA8-A3A0-E35DC5CE15BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03D76DE6-3C07-4AA8-A3A0-E35DC5CE15BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03D76DE6-3C07-4AA8-A3A0-E35DC5CE15BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6B3263D-30EA-4BAC-A339-3A25E7515D41}.Debug|Any CPU.ActiveCfg = Debug
-		{B6B3263D-30EA-4BAC-A339-3A25E7515D41}.Release|Any CPU.ActiveCfg = Release
+		{43DE70FB-DA90-4BE9-ACB4-30B05373B8A3}.Debug|Any CPU.ActiveCfg = Debug
+		{43DE70FB-DA90-4BE9-ACB4-30B05373B8A3}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

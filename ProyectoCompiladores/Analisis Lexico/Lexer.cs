@@ -274,7 +274,7 @@ namespace ProyectoCompis.Analisis_Lexico
 
         public List<Token> TokensFiltered
         {
-            get { return Tokens.Where(t => !t.TokenType.IsAuxiliary())./*OrderBy(a => a.Line).ThenBy(a => a.Index).*/ToList(); }
+            get { return Tokens.Where(t => !t.TokenType.IsAuxiliary()).ToList(); }
         }
 
         public List<TokenInfo> TokensInfo
@@ -292,8 +292,6 @@ namespace ProyectoCompis.Analisis_Lexico
         }
         private void Initialize()
         {
-
-
 
             reservar(new Palabra("if", TokenType.IF));
             reservar(new Palabra("else", TokenType.ELSE));

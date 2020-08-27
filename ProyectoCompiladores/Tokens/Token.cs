@@ -12,7 +12,7 @@ namespace ProyectoCompiladores.Tokens
         public string Lexeme { get; }
 
 
-        public Token(string lexeme) : this(lexeme, TokenType.None) { }
+        public Token(string lexeme) : this(lexeme, TokenType.Error) { }
         public Token(string lexeme, TokenType type)
         {
             this.TokenType = type;

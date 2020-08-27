@@ -8,7 +8,7 @@ namespace ProyectoCompiladores.Tokens
 {
     public enum TokenType
     {
-        None,
+        Error,
 
         /*Identificadores,
         Integer,
