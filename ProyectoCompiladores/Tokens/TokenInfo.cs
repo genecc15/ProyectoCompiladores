@@ -11,6 +11,7 @@ namespace ProyectoCompiladores.Tokens
         public Token Token { get; }
         public int Index { get; set; }
         public int EndIndex { get { return Index + Token.Lexeme.Length; } }
+        //Ya se porque no servia el string, no estaba agregado hahaha
         public int Line { get; set; }
         private static string[] keywords = {
                 "abstract", "continue", "for", "new", "switch",
@@ -22,7 +23,7 @@ namespace ProyectoCompiladores.Tokens
                 "catch", "extends", "int", "short", "try",
                 "char", "final", "interface", "static", "void",
                 "class", "finally", "long", "strictfp", "volatile",
-                "const", "float", "native", "super", "while"};
+                "const", "float", "native", "super", "while", "string"};
 
         private static string[] types =
         {

@@ -369,7 +369,6 @@ namespace ProyectoCompis.Analisis_Lexico
             reservar(new Palabra("-", TokenType.OPMENOS));
             reservar(new Palabra("+", TokenType.OPMAS));
             reservar(new Palabra("*", TokenType.OPMULTI));
-            // reservar(new Palabra("/", TokenType.DIV));
             reservar(new Palabra("[", TokenType.CORCHEI));
             reservar(new Palabra("]", TokenType.CORCHED));
             reservar(new Palabra("\"", TokenType.COMILLASDOBLES));

@@ -34,7 +34,6 @@ namespace ProyectoCompis.Analisis_Lexico
         }
         public static Tipo max(Tipo p1, Tipo p2)
         {
-            // if (cadena(p1) || cadena(p2)) return Tipo.String;
             if (!numerico(p1) || !numerico(p2)) return null;
             else if (p1 == Tipo.Float || p2 == Tipo.Float) return Tipo.Float;
             else if (p1 == Tipo.Int || p2 == Tipo.Int) return Tipo.Int;
