@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ProyectoCompiladores.Tokens;
 
-namespace ProyectoCompis.Analisis_Lexico
+namespace ProyectoCompiladores.Analisis_Lexico
 {
     public class Tipo : Palabra
     {

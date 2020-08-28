@@ -11,7 +11,7 @@ using ProyectoCompiladores.Tokens;
 using ProyectoCompiladores.Analisis_Lexico;
 using System.Threading;
 using System.IO;
-using ProyectoCompis.Analisis_Lexico;
+using ProyectoCompiladores.Analisis_Lexico;
 
 namespace ProyectoCompiladores
 {
@@ -43,13 +43,16 @@ namespace ProyectoCompiladores
             {
                 path = ofd.FileName;
             }
+
+
             ext = Path.GetExtension(path);
             nombreArchivo = Path.GetFileName(path).Replace(ext, "");
             StreamReader sr = new StreamReader(path);
             while (!sr.EndOfStream)
             {
-                archivo += sr.ReadLine();
+                archivo += sr.ReadLine() + "\n";
             }
+
             #endregion
             Lexer lexer = new Lexer(archivo);
             richTextBox1.Text = string.Empty;

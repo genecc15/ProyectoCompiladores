@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using ProyectoCompiladores.Analisis_Lexico;
 using ProyectoCompiladores.Tokens;
 
-namespace ProyectoCompis.Analisis_Lexico
+namespace ProyectoCompiladores.Analisis_Lexico
 {
     internal class InputHelper
     {

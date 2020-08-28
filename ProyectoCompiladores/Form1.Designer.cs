@@ -41,7 +41,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(16, 15);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(52, 36);
@@ -58,7 +58,7 @@
             // 
             this.btnAnalisisLexico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAnalisisLexico.BackgroundImage")));
             this.btnAnalisisLexico.Location = new System.Drawing.Point(405, 345);
-            this.btnAnalisisLexico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnalisisLexico.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnalisisLexico.Name = "btnAnalisisLexico";
             this.btnAnalisisLexico.Size = new System.Drawing.Size(163, 150);
             this.btnAnalisisLexico.TabIndex = 2;
@@ -68,7 +68,7 @@
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(668, 145);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(580, 580);
             this.richTextBox1.TabIndex = 3;
@@ -103,7 +103,7 @@
             this.Controls.Add(this.btnAnalisisLexico);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MiniJ";
