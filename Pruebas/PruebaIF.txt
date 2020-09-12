@@ -1,0 +1,18 @@
+class PruebaDelIf {
+
+    public static void main(String[] args)
+{
+int a;
+int b;
+if (a < b)
+            {
+                b = a;
+            }
+            else
+            {
+                a = a + b;
+                a++;
+            }
+
+}
+}

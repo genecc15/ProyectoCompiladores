@@ -1,0 +1,8 @@
+class Prueba {
+
+    public static void main(String[] args) {
+        String numeros = "234";
+        double a = 3;
+         float b = 0.5;
+}
+}

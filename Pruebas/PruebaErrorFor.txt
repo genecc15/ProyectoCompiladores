@@ -1,0 +1,50 @@
+class ForPrueba {
+
+    public static void main(String[] args) {
+         int a = 19;
+         float b = 0.5;
+            for (int i = 0; i < a; i++)
+            {
+                int c;
+                while (b < a)
+                {
+                    for (int h = 0; h < 12; h++)
+                    {
+                        {
+                            int x;
+                        }
+                        while (i < h)
+                        {
+                            {
+                                int x = 2;
+                            }
+                            int x = h * b;
+                            i++;
+                        }
+                        do
+                        {
+                            c = 2;
+                        } while (c != 2);
+                    }
+                }
+                int x = 12 * i / (b + a / 4) - 12 / b;
+                float y = x * 12.5 + 2;
+                c++;
+                b = 0;
+            }
+            for (int i = 0; i < 10; i++)
+            {
+            }
+            if (a < b)
+            {
+
+            }
+            else
+            {
+                a = a + b;
+                a++;
+            }
+            b = a * b;
+
+        }
+    }
