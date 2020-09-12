@@ -8,5 +8,11 @@ procede entonces a info a revisar exactamente cual reservada es. También contam
 es donde creamos todo el analizador. De no encontrar algo válido, procede a en tokentype a extraer "Error". Todo aquello que no se haya agregado a los tokens el programa lo 
 considera como un error.
 
+*****Rama Laboratorio*****
+En esta rama encontrará 3 carpetas, una con la solución del mini java para correrlo en Visual Studio, la una segunda que contiene un instalador
+y reparador de la aplicación de escritorio(Esto no tarda más de 1 minuto). El instalador se encuentra dentro de la carpeta debug y una tercera con los archivos de prueba. Para poder corroborar los archivos
+se necesita escribirlo en el cuadro text(No leia path), de encontrar un error el analizador se detiene y muestra al usuario donde lo ha encontrado por lo que el usuario
+deberá corregirlo y el programa seguirá su curso. De no encontrar un error sintáctico mostrará una mensaje de analisis completo.
+
 Creditos:
 Génesis Cortez y Kevin Damián
