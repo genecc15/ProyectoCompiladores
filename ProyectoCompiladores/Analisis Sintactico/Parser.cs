@@ -230,6 +230,8 @@ namespace ProyectoCompiladores.Analisis_Sintactico
                     return parseVarDecl();
                 case TokenType.DOUBLE:
                     return parseVarDecl();
+                case TokenType.PRINT:
+                    return parseVarDecl();
             }
 
 
