@@ -10,8 +10,9 @@ considera como un error.
 
 *****Rama Laboratorio*****
 En esta rama encontrará 3 carpetas, una con la solución del mini java para correrlo en Visual Studio, la una segunda que contiene un instalador
-y reparador de la aplicación de escritorio. El instalador se encuentra dentro de la carpeta debug y una tercera con los archivos de prueba. Para poder corroborar los archivos
+y reparador de la aplicación de escritorio(Esto no tarda más de 1 minuto). El instalador se encuentra dentro de la carpeta debug y una tercera con los archivos de prueba. Para poder corroborar los archivos
 se necesita escribirlo en el cuadro text(No leia path), de encontrar un error el analizador se detiene y muestra al usuario donde lo ha encontrado por lo que el usuario
 deberá corregirlo y el programa seguirá su curso. De no encontrar un error sintáctico mostrará una mensaje de analisis completo.
+
 Creditos:
 Génesis Cortez y Kevin Damián
