@@ -11,7 +11,7 @@ using ProyectoCompiladores.Tokens;
 using ProyectoCompiladores.Analisis_Lexico;
 using System.Threading;
 using System.IO;
-using ProyectoCompiladores.Analisis_Lexico;
+using ProyectoCompiladores.Analisis_Sintactico;
 
 namespace ProyectoCompiladores
 {
@@ -97,6 +97,54 @@ namespace ProyectoCompiladores
             {
                 load.Close();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            #region Variables y lectura
+            string path = "";
+            string archivo = "";
+            string nombreArchivo = "";
+            string ext = "";
+            OpenFileDialog ofd = new OpenFileDialog();
+            StringBuilder textB = new StringBuilder();
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                path = ofd.FileName;
+            }
+
+
+            ext = Path.GetExtension(path);
+            nombreArchivo = Path.GetFileName(path).Replace(ext, "");
+            StreamReader sr = new StreamReader(path);
+            while (!sr.EndOfStream)
+            {
+                archivo += sr.ReadLine() + "\n";
+            }
+
+            #endregion
+            
+            richTextBox1.Text = string.Empty;
+            #region EscrituraArchivo   
+            try
+            {
+                Lexer lexer = new Lexer(archivo);
+                Parser p = new Parser(lexer);
+                p.parseProgram();
+                richTextBox1.Text = "Programa analizado correctamente";
+            }
+            catch (Exception ex)
+            {
+                richTextBox1.Text = ex.Message;
+            }
+
+            richTextBox1.Text = textB.ToString();
+            lblCreado.Visible = true;
+            lblCreado.ForeColor = Color.Green;
+            lblCreado.Text = "Archivo de salida " + nombreArchivo + ".out, " + "creado con exito";
+            #endregion
         }
     }
 }
