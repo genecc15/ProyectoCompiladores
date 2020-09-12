@@ -54,12 +54,39 @@
     <Compile Include="Analisis Lexico\Palabra.cs" />
     <Compile Include="Analisis Lexico\Real.cs" />
     <Compile Include="Analisis Lexico\Tipo.cs" />
+    <Compile Include="Analisis Sintactico\Entorno.cs" />
+    <Compile Include="Analisis Sintactico\Parser.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gramatica\And.cs" />
+    <Compile Include="Gramatica\Arit.cs" />
+    <Compile Include="Gramatica\Asignacion.cs" />
+    <Compile Include="Gramatica\Block.cs" />
+    <Compile Include="Gramatica\Constante.cs" />
+    <Compile Include="Gramatica\Else.cs" />
+    <Compile Include="Gramatica\Expresion.cs" />
+    <Compile Include="Gramatica\Identifier.cs" />
+    <Compile Include="Gramatica\If.cs" />
+    <Compile Include="Gramatica\Logica.cs" />
+    <Compile Include="Gramatica\MainClass.cs" />
+    <Compile Include="Gramatica\MethodDecl.cs" />
+    <Compile Include="Gramatica\Nodo.cs" />
+    <Compile Include="Gramatica\Not.cs" />
+    <Compile Include="Gramatica\Op.cs" />
+    <Compile Include="Gramatica\Or.cs" />
+    <Compile Include="Gramatica\Print.cs" />
+    <Compile Include="Gramatica\Program2.cs" />
+    <Compile Include="Gramatica\Relacion.cs" />
+    <Compile Include="Gramatica\Statement.cs" />
+    <Compile Include="Gramatica\StatementList.cs" />
+    <Compile Include="Gramatica\Unario.cs" />
+    <Compile Include="Gramatica\VarDecl.cs" />
+    <Compile Include="Gramatica\VarDeclAndAsig.cs" />
+    <Compile Include="Gramatica\VarDeclList.cs" />
     <Compile Include="loading.cs">
       <SubType>Form</SubType>
     </Compile>
