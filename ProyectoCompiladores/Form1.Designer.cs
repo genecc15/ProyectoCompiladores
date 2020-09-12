@@ -36,15 +36,15 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.lblArchivo = new System.Windows.Forms.Label();
             this.lblCreado = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 15);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(52, 36);
+            this.textBox1.Size = new System.Drawing.Size(40, 30);
             this.textBox1.TabIndex = 0;
             this.textBox1.Visible = false;
             // 
@@ -56,54 +56,65 @@
             // 
             // btnAnalisisLexico
             // 
-            this.btnAnalisisLexico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAnalisisLexico.BackgroundImage")));
-            this.btnAnalisisLexico.Location = new System.Drawing.Point(405, 345);
-            this.btnAnalisisLexico.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAnalisisLexico.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAnalisisLexico.Location = new System.Drawing.Point(311, 116);
             this.btnAnalisisLexico.Name = "btnAnalisisLexico";
-            this.btnAnalisisLexico.Size = new System.Drawing.Size(163, 150);
+            this.btnAnalisisLexico.Size = new System.Drawing.Size(122, 120);
             this.btnAnalisisLexico.TabIndex = 2;
-            this.btnAnalisisLexico.UseVisualStyleBackColor = true;
+            this.btnAnalisisLexico.Text = "Analisis Lexico";
+            this.btnAnalisisLexico.UseVisualStyleBackColor = false;
             this.btnAnalisisLexico.Click += new System.EventHandler(this.btnAnalisisLexico_Click);
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(668, 145);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBox1.Location = new System.Drawing.Point(501, 116);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(580, 580);
+            this.richTextBox1.Size = new System.Drawing.Size(436, 465);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
             // lblArchivo
             // 
             this.lblArchivo.AutoSize = true;
-            this.lblArchivo.Location = new System.Drawing.Point(918, 37);
+            this.lblArchivo.Location = new System.Drawing.Point(688, 30);
+            this.lblArchivo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblArchivo.Name = "lblArchivo";
-            this.lblArchivo.Size = new System.Drawing.Size(0, 25);
+            this.lblArchivo.Size = new System.Drawing.Size(0, 20);
             this.lblArchivo.TabIndex = 4;
             // 
             // lblCreado
             // 
             this.lblCreado.AutoSize = true;
-            this.lblCreado.Location = new System.Drawing.Point(663, 67);
+            this.lblCreado.Location = new System.Drawing.Point(497, 54);
+            this.lblCreado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCreado.Name = "lblCreado";
-            this.lblCreado.Size = new System.Drawing.Size(66, 25);
+            this.lblCreado.Size = new System.Drawing.Size(45, 20);
             this.lblCreado.TabIndex = 5;
             this.lblCreado.Text = ".........";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.button1.Location = new System.Drawing.Point(311, 289);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 112);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Analisis Sintactico";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoCompiladores.Properties.Resources.mc;
-            this.ClientSize = new System.Drawing.Size(1393, 786);
+            this.ClientSize = new System.Drawing.Size(1045, 629);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblCreado);
             this.Controls.Add(this.lblArchivo);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnAnalisisLexico);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MiniJ";
@@ -120,6 +131,7 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label lblArchivo;
         private System.Windows.Forms.Label lblCreado;
+        private System.Windows.Forms.Button button1;
     }
 }
 
