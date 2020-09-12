@@ -23,7 +23,7 @@ namespace ProyectoCompiladores.Tokens
                 "catch", "extends", "int", "short", "try",
                 "char", "final", "interface", "static", "void",
                 "class", "finally", "long", "strictfp", "volatile",
-                "const", "float", "native", "super", "while", "string"};
+                "const", "float", "native", "super", "while", "string", "Print"};
 
         private static string[] types =
         {
