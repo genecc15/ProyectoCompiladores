@@ -11,7 +11,7 @@ namespace ProyectoCompiladores.Analisis_Lexico
     {
         private int valorField;
         public int valor { get { return valorField; } }
-        public Num(int v) : base(v.ToString(), TokenType.ENTERO)
+        public Num(int v) : base(v.ToString(), TokenType.IDENT)
         {
             valorField = v;
         }

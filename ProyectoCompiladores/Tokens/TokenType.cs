@@ -76,7 +76,7 @@ namespace ProyectoCompiladores.Tokens
         CADENA,     //  '"Hola"';
 
         // Constantes
-        ENTERO, // 1,2,3,4
+        IDENT, // 1,2,3,4
         FLOTANTE, // 3.14, 0.0, 12.332
 
         // Espacios
