@@ -228,25 +228,33 @@ namespace ProyectoCompiladores.Analisis_Lexico
                             //validar si tiene que hacer reduccion
                             else if(estados[i,j].Contains("R"))
                             {
+                                 //logica para saber como proceder segun lo que se lee antes
                                 string [] array = estados[i,j].Split(',');
-                                for(int n = 0; n < array.Length; n++)
+                                if(array[0].Contains("R"))
                                 {
-                                    //logica para saber como proceder segun lo que se lee antes
-
                                     //logica para reducir, esperar y desplazarse
                                     string nuevaPalabra = reducir(estados[i,0], array[n].Trim('R'));
                                     slrFunc(pilaSimbolos.Peek().ToString());
                                     existe = true;
                                 }
+                                else
+                                {
+                                    //se guarda el estado en la pila de estados
+                                    pilaEstados.Push(array[0]);
+                                    //se guarda la palabra en la pila de simbolos leidos y se saca de la pila de entrada
+                                    pilaSimbolos.Push(entrada.Pop());
+                                    //enviar palabra siguiente
+                                    existe = slrFunc(entrada.Peek().ToString());
+                                    existe = true;
+                                }
                             }
                             else
                             {
-                                entrada.Pop();
                                 //se guarda el estado en la pila de estados
-                                pilaEstados.Push(estados[0,j]);
-                                //se guarda la palabra en la pila de simbolos leidos
-                                pilaSimbolos.Push(estados[i,0]);
-                                //enviar nuevo estado y palabra siguiente
+                                pilaEstados.Push(estados[i,j]);
+                                //se guarda la palabra en la pila de simbolos leidos y se saca de la pila de entrada
+                                pilaSimbolos.Push(entrada.Pop());
+                                //enviar palabra siguiente
                                 existe = slrFunc(entrada.Peek().ToString());
                                 existe = true;
                             }
