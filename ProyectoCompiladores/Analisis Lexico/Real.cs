@@ -11,7 +11,7 @@ namespace ProyectoCompiladores.Analisis_Lexico
     {
         private float valorField;
         public float Valor { get { return valorField; } }
-        public Real(float v) : base(((double)v).ToString("0.0#####"), TokenType.FLOTANTE)
+        public Real(float v) : base(((double)v).ToString("0.0#####"), TokenType.doubleConstant)
         {
             valorField = v;
         }

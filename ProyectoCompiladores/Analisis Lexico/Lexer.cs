@@ -128,7 +128,7 @@ namespace ProyectoCompiladores.Analisis_Lexico
             {
                 return palabras[s];
             }
-            Palabra w = new Palabra(s, TokenType.ID);
+            Palabra w = new Palabra(s, TokenType.stringConstant);
             palabras.Add(s, w);
             return w;
         }

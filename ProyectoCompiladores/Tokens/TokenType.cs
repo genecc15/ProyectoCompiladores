@@ -76,8 +76,8 @@ namespace ProyectoCompiladores.Tokens
         CADENA,     //  '"Hola"';
 
         // Constantes
-        IDENT, // 1,2,3,4
-        FLOTANTE, // 3.14, 0.0, 12.332
+        intConstant, // 1,2,3,4
+        doubleConstant, // 3.14, 0.0, 12.332
 
         // Espacios
         WHITESPACE, // ( )
@@ -85,7 +85,7 @@ namespace ProyectoCompiladores.Tokens
         TAB,        // (\t)
         CARRIAGERETURN,  // (\r)
 
-        ID,
+        stringConstant,
         LINE_COMMENT,
         BLOCK_COMMENT,
         TEMP,
