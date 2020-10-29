@@ -85,7 +85,7 @@ namespace ProyectoCompiladores.Tokens
         TAB,        // (\t)
         CARRIAGERETURN,  // (\r)
 
-        stringConstant,
+        ID,
         LINE_COMMENT,
         BLOCK_COMMENT,
         TEMP,
