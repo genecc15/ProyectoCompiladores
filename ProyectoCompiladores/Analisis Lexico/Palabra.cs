@@ -24,9 +24,10 @@ namespace ProyectoCompiladores.Analisis_Lexico
         public static Palabra LESSEQ { get { return new Palabra("<=", TokenType.MENORIGUAL); } }
         public static Palabra GREATE { get { return new Palabra(">=", TokenType.MAYORIGUAL); } }
         public static Palabra MINUS { get { return new Palabra("minus", TokenType.OPMENOS); } }
-        public static Palabra TRUE { get { return new Palabra("true", TokenType.TRUE); } }
-        public static Palabra FALSE { get { return new Palabra("false", TokenType.FALSE); } }
+        public static Palabra TRUE { get { return new Palabra("true", TokenType.booleanConstant); } }
+        public static Palabra FALSE { get { return new Palabra("false", TokenType.booleanConstant); } }
         public static Palabra TEMP { get { return new Palabra("t", TokenType.TEMP); } }
+        public static Palabra DOSPUNTOS { get { return new Palabra(":", TokenType.DOSPUNTOS); } }
 
     }
 }

@@ -371,6 +371,7 @@ namespace ProyectoCompiladores.Analisis_Lexico
             reservar(new Palabra("]", TokenType.CORCHED));
             reservar(new Palabra("\"", TokenType.COMILLASDOBLES));
             reservar(new Palabra("'", TokenType.COMILLAS));
+            reservar(new Palabra(":", TokenType.DOSPUNTOS));
         }
 
     }

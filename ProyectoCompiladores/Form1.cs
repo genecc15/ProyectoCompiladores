@@ -71,24 +71,24 @@ namespace ProyectoCompiladores
             StreamWriter sw = new StreamWriter(path2 + "/" + nombreArchivo + ".out");
 
             //declarar la clase slr 
-            Slr metodoSlr = new Slr();
+            //Slr metodoSlr = new Slr();
             List<string> lista = new List<string>();
 
             foreach (var token in lexer.TokensFilteredInfo)
             {
                 textB.Append(token + "\n");
                 sw.WriteLine(token + "\n");
-                lista.Add(token);
+                //lista.Add(token);
             }
 
-            //convertir lista en pila para enviarla a clase analisis slr
-            Stack pilaEntrada = new Stack();
-            lista.Reverse();
-            foreach(var s in lista)
-            {
-                pilaEntrada.Push(s);
-            }
-            metodoSlr.entrada = pilaEntrada;
+            ////convertir lista en pila para enviarla a clase analisis slr
+            //Stack pilaEntrada = new Stack();
+            //lista.Reverse();
+            //foreach(var s in lista)
+            //{
+            //    pilaEntrada.Push(s);
+            //}
+            //metodoSlr.entrada = pilaEntrada;
 
             sw.Close();
             richTextBox1.Text = textB.ToString();

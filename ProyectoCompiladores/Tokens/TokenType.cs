@@ -32,7 +32,7 @@ namespace ProyectoCompiladores.Tokens
         FOR,    // 'for';
         RETURN,     //  'return';
         NULL,   //  'null';
-        TRUE,   //  'true';
+        booleanConstant,   //  'true';
         FALSE,  //  'false';
         THIS,   //  'this';
         NEW,    //  'new';
@@ -74,6 +74,7 @@ namespace ProyectoCompiladores.Tokens
         COMILLASDOBLES,     //  '"';
         COMILLAS,   //  ''';
         stringConstant,     //  '"Hola"';
+        DOSPUNTOS, // :
 
         // Constantes
         intConstant, // 1,2,3,4
