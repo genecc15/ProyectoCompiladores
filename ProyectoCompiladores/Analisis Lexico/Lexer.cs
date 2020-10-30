@@ -128,7 +128,7 @@ namespace ProyectoCompiladores.Analisis_Lexico
             {
                 return palabras[s];
             }
-            Palabra w = new Palabra(s, TokenType.ID);
+            Palabra w = new Palabra(s, TokenType.ident);
             palabras.Add(s, w);
             return w;
         }
@@ -240,10 +240,10 @@ namespace ProyectoCompiladores.Analisis_Lexico
                     while (actual != '"')
                     {
                         cadena += actual;
-                        if (reader.Peek() == InputHelper.EOF) return new Token(cadena, TokenType.CADENA);
+                        if (reader.Peek() == InputHelper.EOF) return new Token(cadena, TokenType.stringConstant);
                         actual = reader.Read();
                     }
-                    return new Token(cadena, TokenType.CADENA);
+                    return new Token(cadena, TokenType.stringConstant);
 
             }
 

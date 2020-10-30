@@ -73,7 +73,7 @@ namespace ProyectoCompiladores.Tokens
         CORCHED,    //  ']';
         COMILLASDOBLES,     //  '"';
         COMILLAS,   //  ''';
-        CADENA,     //  '"Hola"';
+        stringConstant,     //  '"Hola"';
 
         // Constantes
         intConstant, // 1,2,3,4
@@ -85,7 +85,7 @@ namespace ProyectoCompiladores.Tokens
         TAB,        // (\t)
         CARRIAGERETURN,  // (\r)
 
-        ID,
+        ident,
         LINE_COMMENT,
         BLOCK_COMMENT,
         TEMP,
