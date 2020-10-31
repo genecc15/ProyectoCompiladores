@@ -38,6 +38,7 @@ namespace ProyectoCompiladores
             string ext = "";
             OpenFileDialog ofd = new OpenFileDialog();
             StringBuilder textB = new StringBuilder();
+            StringBuilder errores = new StringBuilder();
             FolderBrowserDialog fbd = new FolderBrowserDialog();
 
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -96,14 +97,21 @@ namespace ProyectoCompiladores
             metodoSlr.pilaEstados.Push(0);
             if (metodoSlr.slrFunc(metodoSlr.entrada.Peek().ToString()) == true )
             {
-                MessageBox.Show("Cadena sintacticamente correcta");
+                MessageBox.Show("METODO SLR: Cadena sintacticamente correcta");
             }
             else
             {
-                MessageBox.Show("Cadena incorrecta");
+                MessageBox.Show("METODO SLR: Cadena incorrecta");
             }
 
             sw.Close();
+
+            foreach (var s in metodoSlr.pilaErrores)
+            {
+                errores.Append(s + "\n");
+            }
+
+            richTextBox2.Text = errores.ToString();
             richTextBox1.Text = textB.ToString();
             lblCreado.Visible = true;
             lblCreado.ForeColor = Color.Green;
@@ -125,6 +133,11 @@ namespace ProyectoCompiladores
             {
                 load.Close();
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
