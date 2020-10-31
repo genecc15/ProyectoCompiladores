@@ -79,6 +79,7 @@ namespace ProyectoCompiladores
             {
                 textB.Append(token + "\n");
                 sw.WriteLine(token + "\n");
+
                 lista.Add(token.ToString());
             }
 
@@ -90,6 +91,17 @@ namespace ProyectoCompiladores
                 pilaEntrada.Push(s);
             }
             metodoSlr.entrada = pilaEntrada;
+
+            //llamada al metodo slr
+            metodoSlr.pilaEstados.Push(0);
+            if (metodoSlr.slrFunc(metodoSlr.entrada.Peek().ToString()) == true )
+            {
+                MessageBox.Show("Cadena sintacticamente correcta");
+            }
+            else
+            {
+                MessageBox.Show("Cadena incorrecta");
+            }
 
             sw.Close();
             richTextBox1.Text = textB.ToString();
