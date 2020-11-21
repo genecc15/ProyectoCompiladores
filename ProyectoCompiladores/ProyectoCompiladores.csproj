@@ -60,6 +60,34 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gramatica\And.cs" />
+    <Compile Include="Gramatica\Arit.cs" />
+    <Compile Include="Gramatica\Asignacion.cs" />
+    <Compile Include="Gramatica\Block.cs" />
+    <Compile Include="Gramatica\Constante.cs" />
+    <Compile Include="Gramatica\Do.cs" />
+    <Compile Include="Gramatica\Else.cs" />
+    <Compile Include="Gramatica\Exp.cs" />
+    <Compile Include="Gramatica\For.cs" />
+    <Compile Include="Gramatica\Identifier.cs" />
+    <Compile Include="Gramatica\If.cs" />
+    <Compile Include="Gramatica\Logica.cs" />
+    <Compile Include="Gramatica\MainClass.cs" />
+    <Compile Include="Gramatica\MethodDecl.cs" />
+    <Compile Include="Gramatica\Nodo.cs" />
+    <Compile Include="Gramatica\Not.cs" />
+    <Compile Include="Gramatica\Op.cs" />
+    <Compile Include="Gramatica\Or.cs" />
+    <Compile Include="Gramatica\Print.cs" />
+    <Compile Include="Gramatica\Program2.cs" />
+    <Compile Include="Gramatica\Relacion.cs" />
+    <Compile Include="Gramatica\Statement.cs" />
+    <Compile Include="Gramatica\StatementList.cs" />
+    <Compile Include="Gramatica\Unario.cs" />
+    <Compile Include="Gramatica\VarDecl.cs" />
+    <Compile Include="Gramatica\VarDeclAndAsig.cs" />
+    <Compile Include="Gramatica\VarDeclList.cs" />
+    <Compile Include="Gramatica\While.cs" />
     <Compile Include="loading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +96,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Semantico\Entorno.cs" />
+    <Compile Include="Semantico\Parser.cs" />
     <Compile Include="Slr.cs" />
     <Compile Include="Tokens\Token.cs" />
     <Compile Include="Tokens\TokenInfo.cs" />

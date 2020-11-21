@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoCompiladores.Tokens;
+using ProyectoCompiladores.Semantico;
+using ProyectoCompiladores.Gramatica;
 using ProyectoCompiladores.Analisis_Lexico;
 using System.Threading;
 using System.IO;
@@ -75,7 +77,7 @@ namespace ProyectoCompiladores
             //declarar la clase slr 
             Slr metodoSlr = new Slr();
             List<string> lista = new List<string>();
-
+            
             foreach (var token in lexer.TokensFilteredInfo)
             {
                 textB.Append(token + "\n");
@@ -138,6 +140,23 @@ namespace ProyectoCompiladores
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+             string text = richTextBox3.Text;
+           
+            richTextBox4.Text = string.Empty;
+            try
+            {
+                Lexer lexer = new Lexer(text);
+                Parser p = new Parser(lexer);
+                p.parseProgram();
+                richTextBox4.Text = "Programa analizado correctamente";
+            } catch(Exception ex)
+            {
+                richTextBox4.Text = ex.Message;
+            }
         }
     }
 }
