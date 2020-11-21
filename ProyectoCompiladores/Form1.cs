@@ -144,12 +144,25 @@ namespace ProyectoCompiladores
 
         private void button1_Click(object sender, EventArgs e)
         {
-             string text = richTextBox3.Text;
-           
+            OpenFileDialog ofd = new OpenFileDialog();
+            string path = "";
+            string archivo = "";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                path = ofd.FileName;
+            }
+
+            StreamReader sr = new StreamReader(path);
+            while (!sr.EndOfStream)
+            {
+                archivo += sr.ReadLine() + "\n";
+            }
+
             richTextBox4.Text = string.Empty;
             try
             {
-                Lexer lexer = new Lexer(text);
+                Lexer lexer = new Lexer(archivo);
                 Parser p = new Parser(lexer);
                 p.parseProgram();
                 richTextBox4.Text = "Programa analizado correctamente";
